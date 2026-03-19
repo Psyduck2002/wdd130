@@ -10,17 +10,14 @@
     --padding-small: 2px;
     --padding-medium: 10px;
     --padding-large: 20px;
-    /* Widths */
-    --max-width: 840px;
-    --aside-width: 20em;
 }
 
 main {
-    max-width: var(--max-width);
+    max-width: 840px;
 }
 
 aside {
-    width: var(--aside-width);
+    width: 20em;
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
