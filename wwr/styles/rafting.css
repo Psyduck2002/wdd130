@@ -23,15 +23,11 @@ body {
 }
 
 header,
+main,
 footer {
     width: 840px;
     margin: 0 auto;
     background-color: var(--secondary-color);
-}
-
-main {
-    width: 840px;
-    margin: 0 auto;
 }
 
 h1,
