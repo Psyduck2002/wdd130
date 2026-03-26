@@ -18,19 +18,29 @@
     --padding-large: 20px;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
     width: 20em;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: center;
+    padding: 1.5rem;
 }
 
 aside h2 {
     position: absolute;
-    top: 540px;
-    left: 125px;
+    top: 25px;
+    left: 110px;
 }
 
 aside img {
@@ -40,17 +50,24 @@ aside img {
 
 nav {
     background-color: var(--primary-color);
-    padding: var(--padding-medium);
+    padding: var(--padding-medium) 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--text-light);
     display: block;
-    padding: var(--padding-large);
+    padding: var(--padding-large) 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--primary-color);
+    border-bottom: 2px solid black;
 }
 
 main img {
@@ -60,16 +77,24 @@ main img {
     padding: var(--padding-small);
     box-shadow: 0 0 30px var(--shadow-color);
     float: right;
+    margin-left: 1rem;
 }
 
 p {
     padding: 0;
 }
 
+header,
+.grid,
 footer {
-    margin-top: 15px;
-    border-top: 1px solid var(--border-color);
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+footer {
     text-align: center;
+    border-top: 1px solid var(--primary-color);
+    padding: 1rem 0;
 }
 
 /* Class Selectors */
