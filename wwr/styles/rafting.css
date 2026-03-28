@@ -24,7 +24,7 @@ body {
 
 header {
     width: 840px;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: auto 1fr;
