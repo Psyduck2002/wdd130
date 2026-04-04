@@ -197,3 +197,100 @@ article {
     margin-top: 5px;
     font-size: 0.9rem;
 }
+
+.contact-info,
+.contact-content,
+.employees {
+    background-color: var(--secondary-color);
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h1 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+.contact-form {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-form label,
+.contact-form p {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-family: var(--body-font);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.employees h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.employee-gallery figure {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.employee-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.employee-gallery figcaption {
+    margin-top: 8px;
+}
